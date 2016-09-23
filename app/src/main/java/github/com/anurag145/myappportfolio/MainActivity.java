@@ -19,6 +19,6 @@ public class MainActivity extends AppCompatActivity
     protected void onClick(View view)
     {
         Toast.makeText(getApplicationContext(),"This button will Display App : "
-                +((Button)findViewById(view.getId())).getText().toString(),Toast.LENGTH_LONG).show();
+                +((Button)(view)).getText(),Toast.LENGTH_LONG).show();
     }
 }
